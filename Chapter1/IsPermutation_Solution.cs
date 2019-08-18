@@ -6,9 +6,7 @@ namespace PracticeProblems.Chapter1
 {
     public class IsPermutation_Solution
     {
-        // SOLUTION
-        // Problem 1.3, P90
-        // Assumption: ASCII (I realize a abd b are sequences of UTF16, but for simplicity sake, 
+        // Assumption: ASCII (I realize a and b are not ASCII in this instance; however, for simplicity sake, 
         // I am choosing to assume ASCII values)
         public bool IsPermutation(string a, string b)
         {
