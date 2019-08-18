@@ -14,7 +14,7 @@ namespace PracticeProblems.Chapter1
                 currChar = input[i];
                 for (int j = i + 1; j < input.Length; j++)
                 {
-                    if (input[j] == currChar)
+                    if (input[j].Equals(currChar))
                     {
                         return false;
                     }
