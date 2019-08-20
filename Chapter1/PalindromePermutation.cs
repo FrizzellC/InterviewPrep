@@ -6,7 +6,7 @@ namespace PracticeProblems.Chapter1
 {
     // Q1.4, P91
     public class PalindromePermutation
-    {
+    {       
         public bool isPalindromePermutation(string input)
         {
             bool[] frequency = new bool[28];
@@ -15,17 +15,17 @@ namespace PracticeProblems.Chapter1
             foreach (char item in input)
             {
                 int index = GetNumericValue(item);
-                if (index > 0)
+                if (index != 27)
                 {
                     bool current = frequency[index];
 
                     if (current)
                     {
-                        current = false;
+                        frequency[index] = false;
                     }
                     else
                     {
-                        current = true;
+                        frequency[index] = true;
                         trueCount++;
                     }
                 }
