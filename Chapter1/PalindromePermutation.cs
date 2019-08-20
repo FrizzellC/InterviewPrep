@@ -30,7 +30,6 @@ namespace PracticeProblems.Chapter1
                     }
                 }
             }
-
             return ContainsAtMostOneFalse(trueCount, input.Length);
         }
 
