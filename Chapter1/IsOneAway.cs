@@ -8,7 +8,11 @@ namespace PracticeProblems.Chapter1
     {
         public bool isAtMostOneEditAway(string a, string b)
         {
-            int difference = Math.Abs(a.Length) - Math.Abs(b.Length);
+            string longestString = GetLongestString(a, b);
+            string shortestString = GetShortestString(a, b);
+
+            int difference = longestString.Length - shortestString.Length;
+
             if (difference > 1)
             {
                 return false;
@@ -31,6 +35,30 @@ namespace PracticeProblems.Chapter1
                 return false;
             }
             return true;
+        }
+
+        public string GetLongestString(string a, string b)
+        {
+            if (a.Length >= b.Length)
+            {
+                return a;
+            }
+            else
+            {
+                return b;
+            }
+        }
+
+        public string GetShortestString(string a, string b)
+        {
+            if (a.Length >= b.Length)
+            {
+                return b;
+            }
+            else
+            {
+                return a;
+            }
         }
     }
 }
